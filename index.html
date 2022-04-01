@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>calculator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <div id="nav">
+            <div id="left">
+                calc
+            </div>
+            <div id="right">
+            </div>
+        </div>
+        <input id="screen" type="text" readonly="" name="val" />
+        <div id="keybord">
+            <div class="k" onclick='document.getElementById("screen").value += "7"'>7</div>
+            <div class="k" onclick='document.getElementById("screen").value += "8"'>8</div>
+            <div class="k" onclick='document.getElementById("screen").value += "9"'>9</div>
+            <div class="k3" onclick='document.getElementById("screen").value=document.getElementById("screen").value.substring(0,document.getElementById("screen").value.length -1)'>DEL</div>
+            <div class="k" onclick='document.getElementById("screen").value += "4"'>4</div>
+            <div class="k" onclick='document.getElementById("screen").value += "5"'>5</div>
+            <div class="k" onclick='document.getElementById("screen").value += "6"'>6</div>
+            <div class="k" onclick='document.getElementById("screen").value += "+"'>+</div>
+            <div class="k" onclick='document.getElementById("screen").value += "1"'>1</div>
+            <div class="k" onclick='document.getElementById("screen").value += "2"'>2</div>
+            <div class="k" onclick='document.getElementById("screen").value += "3"'>3</div>
+            <div class="k" onclick='document.getElementById("screen").value += "-"'>-</div>
+            <div class="k" onclick='document.getElementById("screen").value += "."'>.</div>
+            <div class="k" onclick='document.getElementById("screen").value += "0"'>0</div>
+            <div class="k" onclick='document.getElementById("screen").value += "/"'>/</div>
+            <div class="special" onclick='document.getElementById("screen").value += "*"'>x</div>
+            <div class="k1" onclick='document.getElementById("screen").value = ""'>RESET</div>
+            <div class="k2" onclick='document.getElementById("screen").value = eval(document.getElementById("screen").value)'>=</div>
+        </div>
+    </main>
+    <script src="script.js">
+    </script>
+</body>
